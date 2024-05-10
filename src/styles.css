@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #26293A;  
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #EDE8F5;
+}
+
+main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: inherit;
+  position: relative;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*
+EDE8F5 background
+ADBBDA light grey
+8697C4 dark grey
+7091E6 light blue
+3D52A0 dark blue
+26293A text
+*/
