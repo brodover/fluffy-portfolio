@@ -169,12 +169,15 @@
   }
 </style>
 -->
-<main class="main">
-  <app-top-bar></app-top-bar>
-  <div class="container">
-    <router-outlet />
-  </div>
 
-  <!--<a href="https://lovepik.com/images/png-sea.html">Sea Png vectors by Lovepik.com</a>-->
+<div class="background">
+  <main class="main">
+      <app-top-bar class="topbar" [class.stuck]="stuck"></app-top-bar>
+    
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    <!--<a href="https://lovepik.com/images/png-sea.html">Sea Png vectors by Lovepik.com</a>-->
 
-</main>
+  </main>
+</div>

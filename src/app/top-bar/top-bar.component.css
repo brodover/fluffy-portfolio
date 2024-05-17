@@ -1,5 +1,5 @@
-.navbar,
-.navbar-hover {
+.navbar {
+  display: flex;
   border-radius: 25px;
   overflow: hidden;
   background-color: #7091e6d7;
@@ -9,17 +9,29 @@
 /* Navbar links */
 .navbar a {
   color: #EDE8F5;
-  float: left;
-  display: block;
+  display: inline-block;
   text-align: center;
-  padding: 14px;
   text-decoration: none;
 }
 
-.navbar-text a {
+/*.navbar-text a {
   color: #EDE8F5;
+}*/
+
+.navbar-spacer {
+  padding: 8px 4px;
 }
 
-.navbar-text-hover a {
+.navbar-text {
+  padding: 6px 10px;
+}
+
+.navbar-text-hover {
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #adbbdaa1;
+}
+
+.navbar a.active {
   color: #26293A;
 }

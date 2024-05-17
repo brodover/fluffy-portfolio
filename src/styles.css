@@ -6,36 +6,27 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.hi-melody-regular div, span {
+  font-family: "Hi Melody", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    background-color: #EDE8F5;
+    margin: 0px;
 }
 
 main {
   width: 100%;
   min-height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  /*
+  justify-content: center;
+  padding: 1rem;*/
   box-sizing: inherit;
   position: relative;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
 }
 
 /*

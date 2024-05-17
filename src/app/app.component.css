@@ -1,0 +1,49 @@
+/*
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+*/
+.background {
+  height: 100%;
+  width: 100%;
+  /*position: absolute;*/
+  background-color: #fff;
+  background-image: radial-gradient(at top left, #f0ace0ce, #a7d3f2d3),
+    radial-gradient(at bottom right, #a7d3f2, #ffa4b2de);
+  background-size: 180% 180%;
+  background-repeat: no-repeat;
+  /*z-index: 1;*/
+  animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.topbar {
+  position: sticky;
+  margin-top: 24px;
+  top: 24px;
+  margin-bottom: 16px;
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.stuck {
+  background-color: #a7d3f200;
+}
