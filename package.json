@@ -7,7 +7,7 @@
     "build": "ng build --base-href /page/ --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postbuild":"xcopy /s \".\/dist\\browser\" \"dist\" \/Y"
+    "postbuild":"xcopy /s \".\/docs\\browser\" \"docs\" \/Y"
   },
   "private": true,
   "dependencies": {
