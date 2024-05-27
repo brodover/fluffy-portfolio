@@ -58,8 +58,10 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
+            "dir": "docs",
             "baseHref": "/page/",
-            "buildTarget": "Personal-Portfolio:build:production"
+            "buildTarget": "Personal-Portfolio:build:production",
+            "message": "Auto-generated commit for deployment"
           }
         },
         "serve": {
