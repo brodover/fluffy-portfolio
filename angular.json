@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "docs",
+            "baseHref": "/page/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -53,6 +54,13 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/page/",
+            "buildTarget": "Personal-Portfolio:build:production"
+          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
