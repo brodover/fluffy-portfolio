@@ -33,18 +33,15 @@
 
 .topbar {
   position: sticky;
-  margin-top: 24px;
   top: 24px;
+  margin-top: 24px;
   margin-bottom: 16px;
   z-index: 2;
+  width: 100%;
 }
 
 .container {
   position: relative;
   display: flex;
   flex-direction: row;
-}
-
-.stuck {
-  background-color: #a7d3f200;
 }

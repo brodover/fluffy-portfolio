@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, AfterViewInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, provideRouter } from '@angular/router';
 import { bootstrapApplication } from '@angular/platform-browser';
 
@@ -14,31 +14,11 @@ import { routes } from './app.routes';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  @ViewChild('stickyMenu')
-  menuElement!: ElementRef;
 
-  stuck:boolean = true;
-  elementPosition: any;
-  
   title = 'Rachel\'s-Portfolio';
 
   ngOnInit() {
   }
-
-  ngAfterViewInit(){
-    this.elementPosition = this.menuElement.nativeElement.offsetTop;
-  }
-
-  @HostListener('window:scroll', ['$event'])
-    handleScroll(){
-      const windowScroll = window.scrollY;
-      if(windowScroll >= this.elementPosition){
-        this.stuck = true;
-      } else {
-        this.stuck = false;
-      }
-    }
-
 }
 
 bootstrapApplication(AppComponent, {
