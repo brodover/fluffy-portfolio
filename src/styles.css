@@ -6,7 +6,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.hi-melody-regular div, span {
+.hi-melody-regular div, .hi-melody-regular span {
   font-family: "Hi Melody", sans-serif;
   font-weight: 400;
   font-style: normal;

@@ -1,0 +1,15 @@
+.language-bar {
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #7091e6ec;
+  padding: 0px 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: var(--opacity);
+}
+
+.language-bar a {
+  padding: 9px 1px 13px 1px;
+}

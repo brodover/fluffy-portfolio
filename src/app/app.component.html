@@ -172,11 +172,15 @@
 
 <div class="background">
   <main class="main">
-      <app-top-bar class="topbar"></app-top-bar>
+      <app-top-bar class="topbar sticky"></app-top-bar>
+      
+    <div class="lang-switch">
+      <app-lang-switch class="sticky"></app-lang-switch>
+    </div>
     
-      <div class="container">
-        <router-outlet></router-outlet>
-      </div>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
     <!--<a href="https://lovepik.com/images/png-sea.html">Sea Png vectors by Lovepik.com</a>-->
 
   </main>

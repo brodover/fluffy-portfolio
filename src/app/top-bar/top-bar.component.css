@@ -1,23 +1,29 @@
 .navbar {
+  z-index: 4;
+}
+
+.navbar-common {
   display: flex;
   border-radius: 25px;
   overflow: hidden;
-  background-color: #7091e6ec;
   padding: 0px 14px;
-  
 }
 
 /* Navbar links */
 .navbar a {
   color: #EDE8F5;
+}
+
+.navbar-common a, .navbar-common span {
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  font-weight: 500;
 }
 
-/*.navbar-text a {
-  color: #EDE8F5;
-}*/
+.navbar a.active {
+  color: #26293A;
+}
 
 .navbar-spacer {
   padding: 8px 4px;
@@ -33,17 +39,13 @@
   background-color: #adbbdaa1;
 }
 
-.navbar a.active {
-  color: #26293A;
+.navbar-disappear {
+  position: absolute;
+  background-color: #7091e6ec;
+  z-index: 3;
+  opacity: var(--opacity);
 }
 
-.language-bar {
-  display: flex;
-  border-radius: 25px;
-  overflow: hidden;
-  background-color: #7091e6ec;
-  padding: 0px 14px;
-  position: absolute;
-  top: 0;
-  right: 0;
+.navbar-disappear span {
+  color: #7091e6ec;
 }
