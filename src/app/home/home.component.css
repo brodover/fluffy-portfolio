@@ -6,6 +6,30 @@
   font-size: 100%;
 }
 
+@media screen and (max-width: 799px){
+  .container {
+    font-size: 2vw;
+    margin: 30px 6px;
+  }
+  .container .grid-wrapper {
+    grid-template-columns: 3ch repeat(3, 11ch) 30ch 11ch;
+    grid-auto-rows: 5ch;
+  }
+  .container .intro-container {
+    grid-template-columns: 1fr;
+    padding: 0px 32px;
+  }
+  img.image {
+    display: none;
+  }
+  .container .intro {
+    font-size: max(2.3em, 25px);
+  }
+  .container .sub-intro {
+    font-size: max(1.5em, 20px);
+  }
+}
+
 .container div, span {
   color: #3D52A0;
 }
@@ -91,7 +115,7 @@ img.image {
 }
 
 .intro {
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 
 .sub-intro {

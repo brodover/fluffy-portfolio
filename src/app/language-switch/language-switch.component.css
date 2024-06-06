@@ -11,5 +11,6 @@
 }
 
 .language-bar a {
-  padding: 9px 1px 13px 1px;
+  padding: 12px 0px 12px 0px;
+  font-size: 0.7em;
 }
