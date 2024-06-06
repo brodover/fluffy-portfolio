@@ -2,11 +2,12 @@
   display: flex;
   border-radius: 25px;
   overflow: hidden;
-  background-color: #7091e6ec;
+  background-color: #95b1f6d6;
+  backdrop-filter: blur(3px);
   padding: 0px 14px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 4px;
+  right: 0px;
   opacity: var(--opacity);
 }
 

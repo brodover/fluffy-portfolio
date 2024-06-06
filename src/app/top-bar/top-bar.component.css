@@ -9,20 +9,23 @@
   padding: 0px 14px;
 }
 
-/* Navbar links */
-.navbar a {
-  color: #EDE8F5;
-}
-
 .navbar-common a, .navbar-common span {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.navbar a.active {
-  color: #26293A;
+/* Navbar links */
+.navbar-common a {
+  color: #5c3e8d;
+  /*color: #ADBBDA*/;
+  font-weight: 300;
+}
+
+.navbar-common a.active {
+  /*color: #26293A;*/
+  color: #3D52A0;
+  font-weight: 600;
 }
 
 .navbar-spacer {
@@ -41,11 +44,12 @@
 
 .navbar-disappear {
   position: absolute;
-  background-color: #7091e6ec;
+  background-color: #95b1f6d6;
+  backdrop-filter: blur(3px);
   z-index: 3;
   opacity: var(--opacity);
 }
 
 .navbar-disappear span {
-  color: #7091e6ec;
+  color: #95b1f6d6;
 }
