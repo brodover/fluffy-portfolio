@@ -12,8 +12,8 @@
       "i18n": {
         "sourceLocale": "en",
         "locales": {
-          "kr": {
-            "translation": "src/locale/messages.kr.xlf"
+          "ko": {
+            "translation": "src/locale/messages.ko.xlf"
           }
         }
       },
@@ -37,7 +37,7 @@
               "src/styles.css"
             ],
             "scripts": [],
-            "localize": ["en","kr"],
+            "localize": ["en","ko"],
             "i18nMissingTranslation": "error"
           },
           "configurations": {
@@ -62,8 +62,8 @@
               "extractLicenses": false,
               "sourceMap": true
             },
-            "kr": {
-              "localize": ["kr"]
+            "ko": {
+              "localize": ["ko"]
             }
           },
           "defaultConfiguration": "production"
@@ -86,8 +86,8 @@
             "development": {
               "buildTarget": "Personal-Portfolio:build:development"
             },
-            "kr": {
-              "buildTarget": "Personal-Portfolio:build:development,kr"
+            "ko": {
+              "buildTarget": "Personal-Portfolio:build:development,ko"
             }
           },
           "defaultConfiguration": "development"
