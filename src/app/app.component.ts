@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, LOCALE_ID } from '@angular/core';
 import { RouterOutlet, provideRouter } from '@angular/router';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { ɵ$localize } from '@angular/localize';
 
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { LanguageSwitchComponent } from './language-switch/language-switch.component';
@@ -16,12 +17,14 @@ import { routes } from './app.routes';
 })
 export class AppComponent implements OnInit {
 
-  title = 'Rachel\'s-Page';
+  title = $localize`:@@title:Rachel\'s-Page`;
 
   ngOnInit() {
   }
 }
 
 bootstrapApplication(AppComponent, {
-  providers: [provideRouter(routes)],
+  providers: [provideRouter(routes),
+    { provide: LOCALE_ID, useValue: 'kr' }
+  ]
 });
