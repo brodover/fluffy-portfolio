@@ -72,20 +72,9 @@
             },
             "development": {
               "buildTarget": "Personal-Portfolio:build:development"
-            },
-            "ko": {
-              "buildTarget": "Personal-Portfolio:build:development,ko"
             }
           },
           "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget": "Personal-Portfolio:build",
-            "format": "json",
-            "outputPath": "src/locale"
-          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
