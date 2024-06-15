@@ -1,15 +1,17 @@
 import { Component, HostListener, Inject, LOCALE_ID } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-lang-switch',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './language-switch.component.html',
   styleUrl: './language-switch.component.css'
 })
 export class LanguageSwitchComponent {
   opacity: number;
-  isEn = true;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -17,19 +19,12 @@ export class LanguageSwitchComponent {
     this.opacity = this.calcOpacity();
   }
 
-  constructor(@Inject(LOCALE_ID) private localeId: string) {
+  constructor(private appComp: AppComponent) {
     this.opacity = this.calcOpacity();
   }
 
   changeLanguage() {
-    if (this.isEn) {
-      this.localeId = "kr";
-    }
-    else {
-      this.localeId = "en";
-    }
-    this.isEn = !this.isEn;
-    window.location.reload();
+    this.appComp.swapLocalization();
   }
 
   calcOpacity() : number

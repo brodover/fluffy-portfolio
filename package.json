@@ -19,6 +19,8 @@
     "@angular/platform-browser": "^18.0.2",
     "@angular/platform-browser-dynamic": "^18.0.2",
     "@angular/router": "^18.0.2",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "angular-i18next": "^18.0.0",
     "git": "^0.1.5",
     "i18next": "^23.11.5",

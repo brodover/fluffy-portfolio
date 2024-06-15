@@ -9,14 +9,6 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      "i18n": {
-        "sourceLocale": "en",
-        "locales": {
-          "ko": {
-            "translation": "src/locale/messages.ko.xlf"
-          }
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -36,9 +28,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "localize": ["en","ko"],
-            "i18nMissingTranslation": "error"
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -61,9 +51,6 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
-            },
-            "ko": {
-              "localize": ["ko"]
             }
           },
           "defaultConfiguration": "production"
@@ -96,7 +83,7 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "buildTarget": "Personal-Portfolio:build",
-            "format": "xlf",
+            "format": "json",
             "outputPath": "src/locale"
           }
         },
