@@ -1,0 +1,11 @@
+{
+  "locale": "en",
+  "translations": {
+    "title": "Rachel's Page",
+    "email": "Email",
+    "intro1": "I'm a Software Developer from Singapore, currently based in Seoul, South Korea.",
+    "intro2": "Since graduating from the National University of Singapore's School of Computing in 2011, I've worked 4 years in Singapore 🇸🇬 - developing Facebook games, mobile apps for both Android and iOS, and educational Flash games; and 6 years in Seoul 🇰🇷 - developing Unity mobile games on both Client and Server side.",
+    "intro3": "This site was created for the purpose of having some fun with web programming while learning to use Angular.",
+    "lang": "EN"
+  }
+}
