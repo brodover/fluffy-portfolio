@@ -13,12 +13,14 @@
 
 .background-layer {
   position: absolute;
-    background: linear-gradient(
-      to bottom, 
-      rgb(188, 167, 238, 0) 0vh, 
-      rgb(188, 167, 238, .30) 40vh, 
-      rgb(188, 167, 238, .70) 55vh, 
-      rgb(188, 167, 238) 69vh);
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom, 
+    rgb(188, 167, 238, 0) 0vh, 
+    rgb(188, 167, 238, .30) 40vh, 
+    rgb(188, 167, 238, .70) 55vh, 
+    rgb(188, 167, 238) 69vh);
 }
 
 @keyframes gradient-animation {
