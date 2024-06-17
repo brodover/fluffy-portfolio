@@ -59,6 +59,7 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "dir": "docs/browser",
+            "repo": "https://github.com/brodover/page",
             "baseHref": "/page/",
             "buildTarget": "Personal-Portfolio:build:production",
             "message": "Auto-generated commit for deployment"
