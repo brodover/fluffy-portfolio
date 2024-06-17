@@ -169,18 +169,20 @@
   }
 </style>
 -->
-
-<div class="background">
-  <main class="main">
+<div>
+  <div class="background-anim"></div>
+  <div class="background-layer">
+    <main class="main">
       <app-top-bar class="topbar sticky"></app-top-bar>
+        
+      <div class="lang-switch">
+        <app-lang-switch class="sticky"></app-lang-switch>
+      </div>
       
-    <div class="lang-switch">
-      <app-lang-switch class="sticky"></app-lang-switch>
-    </div>
-    
-    <div class="container">
-      <router-outlet></router-outlet>
-    </div>
-    
-  </main>
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
 </div>
+

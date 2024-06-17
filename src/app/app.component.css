@@ -1,22 +1,24 @@
-/*
-.wrapper {
-  position: relative;
-  height: 100vh;
+.background-anim {
+  position: fixed;
+  min-height: 70vh;
   width: 100%;
-}
-*/
-.background {
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  /*position: absolute;*/
   background-color: #fff;
-  background-image: radial-gradient(at top left, #f0ace0ce, #a7d3f2d3),
-    radial-gradient(at bottom right, #a7d3f2, #ffa4b2de);
-  background-size: 180% 180%;
+  background-image: 
+    radial-gradient(at top left, #f0ace0ce, #a7d3f2d3),
+    radial-gradient(at bottom right, #a7d3f2d3, #ffa4b2de);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  /*z-index: 1;*/
   animation: gradient-animation 6s ease infinite;
+}
+
+.background-layer {
+  position: absolute;
+    background: linear-gradient(
+      to bottom, 
+      rgb(188, 167, 238, 0) 0vh, 
+      rgb(188, 167, 238, .30) 40vh, 
+      rgb(188, 167, 238, .70) 55vh, 
+      rgb(188, 167, 238) 69vh);
 }
 
 @keyframes gradient-animation {
