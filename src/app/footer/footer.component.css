@@ -1,3 +1,15 @@
+@media (hover: hover) {
+  .fake-link:hover .tooltip-text {
+    visibility: visible;
+  }  
+}
+
+@media screen and (max-width: 799px){
+  .content div {
+    font-size: max(0.7em, 12px);
+  }
+}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -17,16 +29,11 @@
 
 .fake-link {
   color: #5B569F;
-  /*text-decoration: underline;*/
   cursor: pointer;
 }
 
-.fake-link:hover .tooltip-text {
-  visibility: visible;
-}
-
 .fake-link .tooltip-text {
-  visibility: hidden;
+  visibility: var(--visibility);
   width: max-content;
   white-space: nowrap;
   background-color: #9FBDE3a1;
@@ -37,18 +44,22 @@
   font-size: 0.8em;
  
   position: absolute;
-  margin-top: -5px;
-  margin-left: 8px;
+  bottom: 74%;
+  right: 0%;
   z-index: 1;
 }
 
 .fake-link .tooltip-text::after {
   content: " ";
   position: absolute;
-  top: 50%;
-  right: 100%; /* To the left of the tooltip */
-  margin-top: -5px;
+  top: 100%; 
+  right: 18px;
+  margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #9FBDE3a1 transparent transparent;
+  border-color: #9FBDE3a1 transparent transparent transparent;
+}
+
+.forced-invisible {
+  visibility: hidden;
 }

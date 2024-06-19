@@ -1,3 +1,9 @@
+@media screen and (max-width: 799px){
+  .language-bar span {
+    font-size: max(0.6em, 10px);
+  }
+}
+
 .language-bar {
   display: flex;
   border-radius: 25px;
@@ -10,9 +16,9 @@
   right: 0px;
   opacity: var(--opacity);
   cursor: pointer;
+  font-size: 0.7em;
 }
 
 .language-bar span {
   padding: 12px 0px 12px 0px;
-  font-size: 0.7em;
 }
