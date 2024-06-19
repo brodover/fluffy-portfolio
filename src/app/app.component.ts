@@ -4,12 +4,15 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { LanguageSwitchComponent } from './language-switch/language-switch.component';
+import { FooterComponent } from './footer/footer.component';
+
 import defaultLanguage from "./../assets/i18n/en.json";
+import { trans } from '../assets/i18n/trans';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ RouterOutlet, TopBarComponent, LanguageSwitchComponent, TranslateModule ],
+  imports: [ RouterOutlet, TranslateModule, TopBarComponent, LanguageSwitchComponent, FooterComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -35,6 +38,10 @@ export class AppComponent implements OnInit {
 
     this.translateService.get('translations.title').subscribe((res: string) => {
       this.titleService.setTitle(res);
+    });
+
+    this.translateService.get('translations.copied').subscribe((res: string) => {
+      trans.copied = res;
     });
   }
 

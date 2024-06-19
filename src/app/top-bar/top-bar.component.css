@@ -17,15 +17,12 @@
 
 /* Navbar links */
 .navbar-common a {
-  color: #5c3e8d;
-  /*color: #ADBBDA*/;
-  font-weight: 300;
+  color: #5B569F;
 }
 
 .navbar-common a.active {
-  /*color: #26293A;*/
-  color: #3D52A0;
-  font-weight: 600;
+  color: #254f81;
+  font-weight: bold;
 }
 
 .navbar-spacer {
@@ -39,17 +36,17 @@
 .navbar-text-hover {
   border-radius: 25px;
   overflow: hidden;
-  background-color: #adbbdaa1;
+  background-color: #9FBDE3a1;
 }
 
 .navbar-disappear {
   position: absolute;
-  background-color: #95b1f6d6;
+  background-color: #6C97D4d6;
   backdrop-filter: blur(3px);
   z-index: 3;
   opacity: var(--opacity);
 }
 
 .navbar-disappear span {
-  color: #95b1f6d6;
+  color: #6C97D4d6;
 }

@@ -4,23 +4,11 @@
   width: 100%;
   background-color: #fff;
   background-image: 
-    radial-gradient(at top left, #f0ace0ce, #a7d3f2d3),
-    radial-gradient(at bottom right, #a7d3f2d3, #ffa4b2de);
-  background-size: 100% 100%;
+    radial-gradient(at top left, #E39FBDd3, #9fbce32d),
+    radial-gradient(at top right, #C69FE3d3, #9fbce32d);
+  background-size: 180% 100%;
   background-repeat: no-repeat;
   animation: gradient-animation 6s ease infinite;
-}
-
-.background-layer {
-  position: absolute;
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(
-    to bottom, 
-    rgb(188, 167, 238, 0) 0vh, 
-    rgb(188, 167, 238, .30) 40vh, 
-    rgb(188, 167, 238, .70) 55vh, 
-    rgb(188, 167, 238) 69vh);
 }
 
 @keyframes gradient-animation {
@@ -33,6 +21,38 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.background-layer {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom, 
+    #9fbde300 0vh, 
+    #9fbde34d 40vh, 
+    #9fbde3b3 55vh, 
+    #9fbde3 69vh, 
+    #9fbde2 88%, 
+    #6C97D4 100%);
+}
+
+main {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: inherit;
+  position: relative;
+  min-height: 100vh;
+}
+
+.non-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
 }
 
 .sticky {
@@ -58,4 +78,9 @@
   position: relative;
   display: flex;
   flex-direction: row;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
 }

@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, LOCALE_ID } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { AppComponent } from '../app.component';
@@ -10,6 +10,7 @@ import { AppComponent } from '../app.component';
   templateUrl: './language-switch.component.html',
   styleUrl: './language-switch.component.css'
 })
+
 export class LanguageSwitchComponent {
   opacity: number;
 
@@ -27,8 +28,7 @@ export class LanguageSwitchComponent {
     this.appComp.swapLocalization();
   }
 
-  calcOpacity() : number
-  {
+  calcOpacity() : number {
     return (100 - window.scrollY) / 100;
   }
 }

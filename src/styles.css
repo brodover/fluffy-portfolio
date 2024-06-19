@@ -23,15 +23,12 @@ body {
     margin: 0px;
 }
 
-main {
-  min-width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: inherit;
-  position: relative;
-}
+/*
+254f81 header text
+85AADC top bar bg
+9fbde3 background
+5B569F link text
+*/
 
 /*
 EDE8F5 background
