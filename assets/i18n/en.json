@@ -2,10 +2,17 @@
   "locale": "en",
   "translations": {
     "title": "Rachel's Page",
+    "name": "Rachel Tay",
     "email": "Email",
+    "copied": "Copied!",
     "intro1": "I'm a Software Developer from Singapore, currently based in Seoul, South Korea.",
     "intro2": "Since graduating from the National University of Singapore's School of Computing in 2011, I've worked 4 years in Singapore 🇸🇬 - developing Facebook games, mobile apps for both Android and iOS, and educational Flash games; and 6 years in Seoul 🇰🇷 - developing Unity mobile games on both Client and Server side.",
     "intro3": "This site was created for the purpose of having some fun with web programming while learning to use Angular.",
+    "reason_title": "3 reasons why I choose to live in South Korea",
+    "reason_intro": "Whenever I get on the topic of how long I've lived in Korea (7 years), people are always curious as to why I decided to leave Singapore. \"Isn't Singapore better?\" Well, here are some of my reasons.",
+    "reason1": "Weather - it's hot and humid all year round in Singapore, basically 4 seasons of summer. Even though I dislike the extremes of both summer and winter here, I think I dislike sweating more than freezing. Also, having the cooling and beautiful spring and autumn seasons is just the cherry on top.",
+    "reason2": "Hallyu wave - I love the language (thank you King Sejong for inventing Hangeul), k-dramas, kpop, even down to the palli palli culture.",
+    "reason3": "Convenience - Abundance of convenience stores, cheap and fast food and package delivery services,  well-established public transport that are on time, and so much more.",
     "lang": "EN"
   }
 }
