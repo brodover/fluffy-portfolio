@@ -1,17 +1,14 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ContactsComponent } from './contacts/contacts.component';
+import { WorkComponent } from './work/work.component';
+import { PersonalComponent } from './personal/personal.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: WorkComponent,
   },
-  /*{
-    path: 'portfolio',
-    component: PortfolioComponent,
-  },*/
   {
-    path: 'contacts', component: ContactsComponent,
+    path: 'personal', 
+    component: PersonalComponent,
   },
 ];

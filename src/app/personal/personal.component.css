@@ -1,0 +1,24 @@
+.content {
+  margin: 25px 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 1.6em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 250px auto;
+  gap: 32px;
+  align-items: center;
+}
+
+.container img {
+  object-fit: scale-down;
+  max-width: 100%;
+}

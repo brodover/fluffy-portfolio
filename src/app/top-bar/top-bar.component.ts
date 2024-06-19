@@ -11,6 +11,8 @@ import { HoverClassDirective } from '../hover-class.directive';
 })
 export class TopBarComponent {
   opacity: number;
+  work = "Work";
+  personal = "Personal";
 
   @HostListener('window:scroll', ['$event'])
 

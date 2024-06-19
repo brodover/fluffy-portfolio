@@ -7,7 +7,6 @@ import { provideHttpClient } from "@angular/common/http";
 
 import { routes } from './app.routes';
 import { environment } from '../environments/environment';
-import { FooterComponent } from './footer/footer.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, environment.apiUrl + '/assets/i18n/', '.json');
@@ -15,7 +14,6 @@ export function createTranslateLoader(http: HttpClient) {
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    FooterComponent,
     provideRouter(routes),
     provideHttpClient(),
     importProvidersFrom(

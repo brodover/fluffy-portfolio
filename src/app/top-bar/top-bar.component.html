@@ -1,20 +1,17 @@
 <div class="navbar-common navbar-disappear" [style.--opacity]="opacity">
   <div class="navbar-spacer"><div class="navbar-text">
-    <span>Home</span>
+    <span>{{ work }}</span>
   </div></div>
   <div class="navbar-spacer"><div class="navbar-text">
-    <span>Contact</span>
+    <span>{{ personal }}</span>
   </div></div>
 </div>
 <div class="navbar-common navbar">
   <div class="navbar-spacer"><div class="navbar-text" appHoverClass="navbar-text-hover">
     <a routerLink="/" routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    [routerLinkActiveOptions]="{ exact: true }">{{ work }}</a>
   </div></div>
-  <!--<div class="navbar-spacer"><div class="navbar-text" appHoverClass="navbar-text-hover">
-    <a href="#portfolio" routerLinkActive="active">Portfolio</a>
-  </div></div>-->
   <div class="navbar-spacer"><div class="navbar-text" appHoverClass="navbar-text-hover">
-    <a routerLink="/contacts" routerLinkActive="active">Contact</a>
+    <a routerLink="/personal" routerLinkActive="active">{{ personal }}</a>
   </div></div>
 </div>
