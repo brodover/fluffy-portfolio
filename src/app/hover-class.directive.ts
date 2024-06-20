@@ -1,5 +1,6 @@
 import { Directive, HostListener, ElementRef, Input } from '@angular/core';
 
+// add style class when mouse over
 @Directive({
   selector: '[appHoverClass]',
   standalone: true

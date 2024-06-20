@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { ObservableInput, timer } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
 
 import { trans } from '../../assets/i18n/trans';
 

@@ -1,4 +1,5 @@
-import { Title } from '@angular/platform-browser';import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
@@ -16,12 +17,9 @@ import { trans } from '../assets/i18n/trans';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   defaultLocale = 'en';
   currentLocale = this.defaultLocale;
-
-  ngOnInit() {
-  }
 
   constructor(private titleService: Title, public translateService: TranslateService) {
     var locale = translateService.getBrowserLang() || this.defaultLocale;
