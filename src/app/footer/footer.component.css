@@ -63,3 +63,7 @@
 .forced-invisible {
   visibility: hidden;
 }
+
+.hidden a {
+  color: #6c97d4df;
+}
